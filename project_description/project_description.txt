@@ -1,0 +1,3 @@
+As an Apprentice you gain XP by either practicing Tarot Card Readings (1xp) or you request a Tarot Card Reading from a Master, if request is accepted the Master will provide a Tarot Card Reading (5xp), when x amount of xp have been achieved you level up to Master.
+Your reading results in 6 cards either reversed or upringt and their meaning.
+You can view your last readings and study them for personal gain.

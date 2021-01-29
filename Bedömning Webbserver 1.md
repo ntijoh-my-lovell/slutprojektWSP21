@@ -5,7 +5,7 @@
 ## Matris
 
 | Aspekt         | E                                                            | C                                                            | A                                                            |
-| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | 
 | Dokumentation  | Tillsammans med läraren dokumenterar du **översiktligt** din applikations funktionalitet, utvecklingsprocess och säkerhet och använder **med viss säkerhet *enkel*** terminologi. | Med läraren som bollplank dokumenterar du **utförligt** din applikations funktionalitet, utvecklingsprocess och säkerhet och använder **med viss säkerhet** ***korrekt*** terminologi. | Med läraren som bollplank dokumenterar du **utförligt  och nyanserat** din applikations funktionalitet, utvecklingsprocess och säkerhet och **använder med säkerhet *korrekt*** terminologi. |
 | Arkitektur     | Tillsammans med läraren utvecklar du en applikation där koden har en **enkel** kodstruktur. | Med läraren som bollplank utvecklar du en applikation där koden har en **god** kodstruktur. | Med läraren som bollplank utvecklar du en applikation där koden **följer MVC** och **följer en given kodstandard.** |
 | Funktionalitet | Tillsammans med läraren  utvecklar du en applikation med **enkel** funktionalitet. | Med läraren som bollplank utvecklar du en applikation med **inloggningssystem** och **tillfredsställande** funktionalitet. | Med läraren som bollplank utvecklar du en applikation med ett **inloggningssystem** och **komplex** funktionalitet. |
@@ -77,11 +77,11 @@ Eleven följer REST fullt ut.
 
 ### E-nivå
 
-Applikationen erbjuder ett enkelt CRUD-gränssnitt (åtminstone Create/Show/Delete) för någon resurs. 
+Applikationen erbjuder ett enkelt CRUD-gränssnitt (åtminstone Create/Show/Delete) för någon resurs.
 
 ### C-nivå
 
-Applikationen erbjuder ett enkelt CRUD-gränssnitt för några resurser, varav minst en har en association/relation till en annan resurs. 
+Applikationen erbjuder ett enkelt CRUD-gränssnitt för några resurser, varav minst en har en association/relation till en annan resurs.
 
 Appliktionen har ett inloggninssystem, och det finns skillnad på vad man kan göra beroende på om man är inloggad eller ej.
 
