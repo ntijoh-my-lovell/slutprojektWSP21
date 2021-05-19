@@ -1,0 +1,12 @@
+/login to account
+
+h1 Apprentice
+/ redirect to signupA
+a href="/showsignupA" Apprentice
+
+form action="/login" method="POST"
+input type="text" name="username" placeholder="Enter username"
+input type="text" name="password" placeholder="Enter password"
+input type="hidden" name="group" value="apprentice"
+input  type="submit" value="Login please!"
+/when successful login: redirect to apprentice.slim
