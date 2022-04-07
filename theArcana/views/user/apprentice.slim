@@ -1,3 +1,26 @@
 /order self, order send to master
 h1 Apprentice
 p  Welcome young ward, the cards await you
+
+
+h2 Major Arcana 
+
+
+- images = Dir.glob('public/img/major_arcana/*')
+
+
+- images.each_with_index do |card, index|
+    - id = cardRAY[index][0]
+    - i = 0
+    - while i < 7
+        - card.slice!(0)
+        - i += 1
+    img src="../#{card}" alt="#{card}"
+    p = meaningRAY[index][0]
+    form method="POST" action="cards/#{id}/update"
+        input type="text" name="meaning" placeholder="Notes..."
+        input type="submit" value="Update notes"
+
+h2 "#{Dir.pwd}"
+
+

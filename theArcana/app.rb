@@ -27,6 +27,30 @@ get('/home') do
     slim(:index)
 end
 
+get('/showsignupA') do
+    slim(:'login/signupA')
+end
+
+get('/user/apprentice') do
+    db = SQLite3::Database.new('db/Arcana_cards.db')
+    cardRAY = db.execute("SELECT CardID FROM tarotCards")
+    meaningRAY = db.execute("SELECT meaning FROM tarotCards")
+    slim(:'user/apprentice',locals:{cardRAY:cardRAY, meaningRAY:meaningRAY})
+
+end
+
+get('/user/master') do
+    slim(:'user/master')
+end
+
+get('/master') do
+    slim(:'user/master')
+end
+
+get('/apprentice') do
+    slim(:'user/apprentice')
+end
+
 #login
 post('/login') do
     username = params[:username]
@@ -52,17 +76,6 @@ post('/login') do
     
 end
 
-get('/showsignupA') do
-    slim(:'login/signupA')
-end
-
-get('/user/apprentice') do
-    slim(:'user/apprentice')
-end
-
-get('/user/master') do
-    slim(:'user/master')
-end
 
 #signupA
 post('/users/new') do
@@ -87,15 +100,14 @@ post('/users/new') do
     end
 end
 
+post("/user/cards/:meaningID/update") do
+    db =SQLite3::Database.new("db/Arcana_Cards.db")
 
-        
+    meaningID = params[:meaningID].to_i
+    meaning = params[:meaning]
 
-    
-
-get('/master') do
-    slim(:'user/master')
+    db.execute("UPDATE tarotCards SET meaning=? WHERE MeaningID=?",meaning, meaningID)
+    redirect('/user/apprentice')
 end
 
-get('/apprentice') do
-    slim(:'user/apprentice')
-end
+
